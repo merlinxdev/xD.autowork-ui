@@ -1,0 +1,211 @@
+@import"https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+:root {
+    --main-template: #333333ce
+}
+
+body {
+    font-family: Kanit, sans-serif;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.main-box {
+    background: linear-gradient(150deg, #000000ed 40%, #1f0004ed);
+    width: 20vh;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 1vh;
+    padding: 10px;
+    box-shadow: 0 4px 10px #00000080;
+    animation: fade-show 1.3s forwards;
+}
+
+@keyframes fade-show {
+    from {
+        left: -30vh;
+    }
+    to {
+        left: 1vh;
+    }
+}
+
+.hide-main-box { 
+    animation: fade-hide 1.3s forwards;
+}
+
+@keyframes fade-hide {
+    from {
+        left: 1vh;
+    }
+    to {
+        left: -30vh;
+    }
+}
+
+.box-body {
+    height: auto;
+    border-radius: 10px
+}
+
+.box-title {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: #fff;
+    background: linear-gradient(90deg, #090909a7, #ff0000bd);
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border-right: 2px solid #ec0202;
+    border-left: 2px solid #ec0202;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.rt1 {
+    position: absolute;
+    left: 3vh;
+    width: .6vh;
+    height: .6vh;
+    rotate: 45deg;
+    border-radius: .2vh;
+    background-color: #ec0202
+}
+
+.rt2 {
+    position: absolute;
+    right: 3vh;
+    width: .6vh;
+    height: .6vh;
+    rotate: 45deg;
+    border-radius: .2vh;
+    background-color: #ec0202
+}
+
+.box-image {
+    background: conic-gradient(#db0f0f, #e0e0e0 0deg);
+    border-radius: 50%;
+    border: 3.4px solid rgb(219, 15, 15);
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(255, 0, 0, .55);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(255, 0, 0, .55);
+    box-shadow: 0 0 17px #ff00008c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: loading 3s linear forwards
+}
+
+.box-image>.circle {
+    position: absolute;
+    background: #380202f6;
+    width: 95%;
+    height: 95%;
+    border-radius: 100%
+}
+
+.box-image>img {
+    position: relative;
+    width: 100%
+}
+
+.box-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: 5%;
+    width: 35%
+}
+
+.line1 {
+    width: 100%;
+    height: .2px;
+    background-color: #fff
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f1e1e9f
+}
+
+.box-bonus {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    background-color: #1f1e1e9f;
+    padding: 5px;
+    border-radius: 10px
+}
+
+.box-detail-bonus {
+    background-color: #1f1e1e9f;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    flex-grow: 1;
+    width: 20%;
+    max-width: 20%
+}
+
+.box-img-bonus {
+    border-radius: 5px;
+    border: .4px solid rgb(255, 4, 4);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+    height: 4vh
+}
+
+.box-img-bonus>img {
+    position: absolute;
+    width: 36px;
+    bottom: 16%
+}
+
+.box-img-bonus>span {
+    position: absolute;
+    background-color: #b43c3c;
+    border: .1px solid rgb(255, 4, 4);
+    display: flex;
+    border-radius: 0 0 5px 5px;
+    justify-content: center;
+    width: 100%;
+    bottom: 0%;
+    font-size: 10px
+}
+
+.box-footer {
+    color: #b1b1b1;
+    font-size: 11px;
+    text-align: center
+}
+
+.box-footer>btn {
+    color: #fff;
+    background-color: #fa3e3ed8;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: .1px solid rgb(255, 4, 4)
+}
+
+.space {
+    background-color: #fff;
+    height: .2px;
+    width: 100%;
+    margin-bottom: 10px
+}
